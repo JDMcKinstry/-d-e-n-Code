@@ -1,0 +1,2 @@
+if (Object['defineProperty'] && !String.prototype.hasOwnProperty('deCode')) Object.defineProperty(String.prototype, 'deCode', { value: function() { return decodeURIComponent(unescape(window.atob(this))); } });
+if (Object['defineProperty'] && !String.prototype.hasOwnProperty('enCode')) Object.defineProperty(String.prototype, 'enCode', { value: function() { return window.btoa(escape(encodeURIComponent(this))); } });
